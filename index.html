@@ -11,17 +11,22 @@
   <title>Order Summary</title>
 </head>
 <body>
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <main class="order">
+    <img class="order__hero" src="images/illustration-hero.svg" alt="Person enjoying music through headphones">
+    <div class="order__content">
+      <h1>Order Summary</h1>
+      <p class="order__description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <div class="plan">
+        <img class="plan__icon" src="images/icon-music.svg" alt="">
+        <div class="plan__details">
+          <p class="plan__name">Annual Plan</p>
+          <p class="plan__price">$59.99/year</p>
+        </div>
+        <button class="plan__change" type="button">Change</button>
+      </div>
+      <button class="order__payment" type="button">Proceed to Payment</button>
+      <button class="order__cancel" type="button">Cancel Order</button>
+    </div>
+  </main>
 </body>
 </html>

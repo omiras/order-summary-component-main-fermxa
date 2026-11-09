@@ -1,3 +1,139 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e8ff;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  color: #1f2f56;
+  font-family: 'Red Hat Display', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.order {
+  width: 90%;
+  max-width: 450px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 30px #1f2f561a;
+}
+
+.order__hero {
+  display: block;
+  width: 100%;
+}
+
+.order__content {
+  padding: 10%;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.order__description {
+  margin: 0 0 24px;
+  color: #7280a7;
+  line-height: 1.6;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #f5f7ff;
+  font-size: 14px;
+}
+
+.plan__icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.plan__details {
+  text-align: left;
+}
+
+.plan__name,
+.plan__price {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.plan__name {
+  font-weight: 900;
+}
+
+.plan__price {
+  color: #7280a7;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 900;
+}
+
+.plan__change {
+  margin-left: auto;
+  padding: 4px 0;
+  background-color: #f5f7ff;
+  font-size: 14px;
+  color: #3829e0;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.order__payment {
+  width: 100%;
+  margin: 32px 0 24px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #3829e0;
+  color: #ffffff;
+  box-shadow: 0 16px 20px #3829e033;
+}
+
+.order__cancel {
+  padding: 8px;
+  background-color: #ffffff;
+  color: #7280a7;
+}
+
+.plan__change:hover,
+.plan__change:focus-visible {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.order__payment:hover,
+.order__payment:focus-visible {
+  background-color: #766cf1;
+}
+
+.order__cancel:hover,
+.order__cancel:focus-visible {
+  color: #1f2f56;
+}
+
+button:focus-visible {
+  outline: 3px solid #1f2f56;
+  outline-offset: 4px;
+}
